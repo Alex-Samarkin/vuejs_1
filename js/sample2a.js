@@ -9,7 +9,7 @@ var app = new Vue({
         cost: 18.3,
         inStock: true,
 
-        medicaments: [{
+        medics: [{
                 id: 1,
                 name: "Аспирин",
                 fullName: "Ацетилсалициловая кислота",
