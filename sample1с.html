@@ -10,24 +10,29 @@
 </head>
 
 <body>
+
     <div class="jumbotron">
         <h4 class="display-8">Лекарственные средства</h4>
         <p class="lead">Справочник</p>
         <hr class="my-4">
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="app">
         <h3>Vue.js</h3>
         <div class="d-flex flex-row">
             <div class="col-12">
-
-
+                <h2>Название: {{name}}</h2>
+                <p>Полное название: {{fullName}}</p>
+                <p>Латинское название: {{latName}}</p>
             </div>
         </div>
     </div>
+
     <script src="./js/jquery-3.3.1.js"></script>
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.js"></script>
+    <script src="./js/vue.js"></script>
+    <script src="./js/sample1с.js"></script>
 </body>
 
 </html>
