@@ -22,13 +22,13 @@
         <div class="d-flex flex-row">
             <div class="col-12">
                 <ol class="list-group">
-                    <li v-for="med in medics" :key="med.id">
+                    <li v-for="(med, index) in medics" :key="med.id">
                         <h2>Название: {{med.name}}</h2>
                         <p>Полное название: {{med.fullName}}</p>
                         <p>Латинское название: {{med.latName}}</p>
                         <p>Цена за ед.: {{ (med.cost).toFixed(2)}} руб.</p>
                         <p>Количество: {{med.count}}</p>
-                        <p>Стоимость: {{ (med.cost*med.count).toFixed(2) }} руб.</p>
+                        <p>Стоимость: {{ overall2(index) }} руб.</p>
                         <p v-if="med.count>10">Довольно много</p>
                         <p v-else-if="med.count<=10 && med.count>0">Осталось немного</p>
                         <p v-else>Товар отсутствует</p>
@@ -44,7 +44,7 @@
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/vue.js"></script>
-    <script src="./js/sample2a.js"></script>
+    <script src="./js/sample2b.js"></script>
 </body>
 
 </html>
